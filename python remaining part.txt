@@ -1,0 +1,134 @@
+Function.py
+
+def square(x):    # you can pass more argument like x,y,z
+    return x * x
+
+for i in range(10):
+    print(f"The square of {i} is {square(i)}")
+
+Hello.py
+print("Hello word")
+# variable in python  there is no need to write types
+a = 28
+b = 1.5
+c = "Hello!"
+d = True
+e = None 
+# python knows that a is int b is a float and c is String and d is True e is NoneType
+
+lembda.py
+
+people = [
+    {"name": "Ahmad","house": "swabi"},
+    {"name": "khalid","house": "shomlo"},
+    {"name": "amear","house": "Harypoor"},
+]
+
+def f(person):
+    return person["house"]
+
+    people.sort(key=f)
+
+    print (people)
+
+List.py
+
+# Define a List of names 
+# keep in mind list work in python like array in other languages.
+# keypoint : in a list there is no need to used colon  after that.
+names = ["Harry", "Ron" ,"Khalid ", "Haroon"]
+
+names.append ("John ")
+
+names.sort ()
+
+print (names) 
+
+Loops.py
+
+# for i in [0 , 1 , 2 , 3 , 4 , 5]: # keep in mind colon after loop in python 
+#      print (i)
+
+# # if you want to print for a number of and don't want to delare all the you  have to used a built in function whic is range 
+# for i in range(6):
+#     print (i)
+
+ # if i declare the list and want to print each name in a next line 
+# names = ["Ahmad","Mahmood", "Qasim"]
+
+# for name in names:
+#      print (name)
+   
+# Likewise if you want to print  a character in each line indivitually.
+
+name = "John "
+
+for character in name:
+    print(character)
+name.py
+
+name = input("Name: ")
+#print("Hello," + name) # they add Hello with name which you write.
+print(f"Hello, {name}")# formated strn
+
+Sequance.py
+# name = "John"
+
+# print (name[0])
+# print (name[1])
+
+# item in python when to takes item from several items
+
+# names = ["Harry", "Ron", "John REDI"]
+
+# print (names[2])
+# print (names[0])# you must careful for square brackets.
+
+# Tupeles in Python
+
+coordinateX = 10.0
+coordinateY = 20.0
+
+coordinate = (10.0, 20.0)
+
+# mutable mean we can change the element in a list.
+#  Key concept in  Data structure
+# List = Sequance of mutable(changable) values.
+# tuple= sequance of immutable Values.
+# set = collection of unique values.
+# dict = collection of key-value pairs.
+
+    
+Sets.py
+# Create an empty Set
+s = set()
+  
+# Add elements to set
+s.add(1)
+s.add(2)
+s.add(3)
+s.add(4)
+s.add(3)# if i write twice an element in a set this element  will not  print again.
+print (s)
+
+# remove element from a set
+s.remove(2)
+print(s)
+
+print (f" The set has {len(s)} elements.")# formatted string  they show haw many element inside a set and using  curli braces takes thay number in plugin into that string.
+
+Squares.py
+ #There is two method of import to file
+ #method 1st
+# from fun import square # import only square from fun 
+# for i in range(10):
+#     print(f"The square of {i} is {square(i)}")
+
+# Note: If i run this program then the error happen which says that: name square is not defined
+# b/c python file does'not know about each other untill we aren't import this.
+#2nd way of importing  all module .
+import fun
+for i in range(10):
+    print(f"The square of {i} is {fun.square(i)}")
+      
+
